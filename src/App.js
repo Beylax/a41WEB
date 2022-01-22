@@ -59,16 +59,16 @@ class App extends React.Component {
 
                     <ul className="navbar-nav mb-2 mb-lg-0 me-2">
                       <li className='nav-item'>
-                        <a href='https://www.facebook.com/Area41BoardShop' target='_blank'><img src={FacebookLogo}/></a>
+                        <a href='https://www.facebook.com/Area41BoardShop' target='_blank' rel="noreferrer"><img src={FacebookLogo} alt="immagine"/></a>
                       </li>
                       <li className='nav-item'>
-                        <a href='https://www.youtube.com/channel/UCO9gA4RKYskMgBAjUfgqT5Q' target='_blank'><img src={YoutubeLogo}/></a>
+                        <a href='https://www.youtube.com/channel/UCO9gA4RKYskMgBAjUfgqT5Q' target='_blank' rel="noreferrer"><img src={YoutubeLogo} alt="immagine"/></a>
                       </li>
                       <li className='nav-item'>
-                        <a href='https://www.instagram.com/a41street_boardshop/' target='_blank'><img src={InstagramLogo}/></a>
+                        <a href='https://www.instagram.com/a41street_boardshop/' target='_blank' rel="noreferrer"><img src={InstagramLogo} alt="immagine"/></a>
                       </li>
                       <li className='nav-item'>
-                        <a href='https://web.whatsapp.com/send?phone=+393288870650' target='_blank'><img src={WhatsappLogo}/></a>
+                        <a href='https://web.whatsapp.com/send?phone=+393288870650' target='_blank' rel="noreferrer"><img src={WhatsappLogo} alt="immagine"/></a>
                       </li>
                     </ul>
 
