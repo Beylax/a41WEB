@@ -24,24 +24,31 @@
 .btn-outline-success{
   color: #34ebae;
   border-color: #34ebae;
+  transition: 1s;
 }
 
-.btn-outline-success:hover{
-  color: white;
+.btn-outline-success:hover, .btn-outline-success:focus{
+  color: Black !important;
   border-color: #34ebae;
   background-color: #34ebae;
 }
 
-nav .navbar-nav li a, nav .navbar-nav li div{
+.nav-item > a{
   color: white !important;
+  margin: 1vmin;
+  font-size: large;
 }
 
-.navbar-nav > .active > a {
+.nav-item > a.active{
   color: #34ebae !important; 
+  border: solid 0.1vmin #34ebae;
+  border-radius: 5vmin;
 }
 .nav-item > a:hover {
   color: #34ebae !important;
 }
+
+/*For home card*/
 
 .section_our_solution .row {
   align-items: center;
@@ -207,4 +214,73 @@ nav .navbar-nav li a, nav .navbar-nav li div{
   }
 }
 
+/*For cards*/
 
+.card{
+  border: none;
+  transition: 0.4s;
+  box-shadow: 0 5px 10px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
+  
+.card > img{
+  height: 30rem;
+}
+
+.card-body{
+  color: #1b8360;
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  transition: 1s;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.card:hover .card-body{
+  color: #34ebae;
+}
+
+.Streetware .card{
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.Streetware .card .card-text{
+  color: #1b8360;
+}
+
+.Streetware{
+  height: 500px;
+}
+
+.Chisiamo h1{
+  color: #34ebae;
+  font-style: oblique;
+}
+
+.Chisiamo p{
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+.Amici .card img{
+  width: fit-content;
+}
+
+.Amici img{
+  transform: scale(0.5);
+  max-height: 40rem;
+}
+
+.Amici .card{
+  align-items: center;
+}
