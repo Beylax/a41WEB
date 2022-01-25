@@ -1,5 +1,4 @@
 import React from "react";
-import Spedizione from "../Immagini/spedizione.png";
 
 class Contatti extends React.Component {
     constructor(props) {
