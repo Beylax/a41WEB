@@ -39,13 +39,13 @@ class App extends React.Component {
                           <a className="nav-link" aria-current="page" href="/DoveSiamo">Dove siamo</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="/Contatti">Contatti</a>
+                          <a className="nav-link" aria-current="page" href="#contatti">Contatti</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="/Brands">I nostri brand</a>
+                          <a className="nav-link" aria-current="page" href="#Brand">I nostri brand</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="/Orari">Orari negozio</a>
+                          <a className="nav-link" aria-current="page" href="#orari">Orari negozio</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link" aria-current="page" href="/SnowboardConNoi">Vieni a snowboardare con noi</a>

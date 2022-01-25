@@ -262,7 +262,7 @@
   height: 500px;
 }
 
-.Chisiamo h1{
+h1{
   color: #34ebae;
   font-style: oblique;
 }
@@ -283,4 +283,54 @@
 
 .Amici .card{
   align-items: center;
+}
+
+.Brand .card, .Brand .card img{
+  height: 15vw;
+}
+
+.Brand{
+  width: 95%;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+
+.Orari p{
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+.wal{
+  width: 10%;
+  height: 10%;
+}
+
+.Contatti{
+  width: 50%;
+}
+
+.intl-tel-input {
+  display: table-cell;
+}
+.intl-tel-input .selected-flag {
+  z-index: 4;
+}
+.intl-tel-input .country-list {
+  z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+}
+
+.Contatti{
+  background-image: url(../src/Immagini/a41.jpg);
 }

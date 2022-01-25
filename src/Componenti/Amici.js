@@ -77,7 +77,7 @@ class Amici extends React.Component {
                         <img src={Funghetto} class="d-block w-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={Crazyriders} class="d-block w-100" alt="..."/>
+                        <img src={Crazyriders} class="crazy d-block w-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
                         <img src={Tavernaverde} class="d-block w-100" alt="..."/>
