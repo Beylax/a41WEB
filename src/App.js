@@ -8,6 +8,7 @@ import FacebookLogo from './Immagini/facebookLogo.png'
 import InstagramLogo from './Immagini/instagramLogo.png'
 import WhatsappLogo from './Immagini/whatsappLogo.png'
 import YoutubeLogo from './Immagini/youtubeLogo.png'
+import Privacy from './Pagine/Privacy';
 
 class App extends React.Component {
 
@@ -24,7 +25,7 @@ class App extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="/">Home</a>
+                      <a className="nav-link active" aria-current="page" href="/#home">Home</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" aria-current="page" href="/Negozio">Negozio</a>
@@ -36,19 +37,16 @@ class App extends React.Component {
                           <a className="nav-link" aria-current="page" href="#Chisiamo">Chi siamo</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="/DoveSiamo">Dove siamo</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="#contatti">Contatti</a>
-                        </li>
-                        <li className="nav-item">
                           <a className="nav-link" aria-current="page" href="#Brand">I nostri brand</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link" aria-current="page" href="#orari">Orari negozio</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" aria-current="page" href="/SnowboardConNoi">Vieni a snowboardare con noi</a>
+                          <a className="nav-link" aria-current="page" href="#contatti">Contatti</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" aria-current="page" href="#dovesiamo">Dove siamo</a>
                         </li>
                         <li><hr class="dropdown-divider bg-white"/></li>
                         <li className="nav-item">
@@ -74,9 +72,21 @@ class App extends React.Component {
           </nav>
           <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/Privacy" element={<Privacy/>}/>
             <Route path="/*" element={<ErrorPage/>}/>
           </Routes>
         </BrowserRouter>
+        <div class="cookie">
+          <div class="txt">
+              <p class="">
+                Usando a41.it,<br/>
+                accetti la nostra <a href="/Privacy" target="_blanck" rel="noreferrer">Privacy Policy.</a>
+              </p>
+          </div>
+          <div>
+              <button class="btn accept">Accept</button>
+          </div>
+        </div>
       </div>
     )
   }

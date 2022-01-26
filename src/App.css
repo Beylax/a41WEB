@@ -82,7 +82,7 @@
 .solution_cards_box .solution_card:hover {
   background: #34ebae;
   color: #fff;
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 9;
 }
 
@@ -223,8 +223,9 @@
     0 5px 15px 0 rgba(37, 44, 97, 0.15);
 }
   
-.card > img{
-  height: 30rem;
+.Categorie .card > img, .Streetware .card > img{
+  min-height: 20rem;
+  max-height: 30rem;
 }
 
 .card-body{
@@ -272,17 +273,47 @@ h1{
   font-style: oblique;
 }
 
-.Amici .card img{
-  width: fit-content;
+.Amici .afterskull{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
-
-.Amici img{
-  transform: scale(0.5);
-  max-height: 40rem;
+.Amici .skate{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
-
-.Amici .card{
-  align-items: center;
+.Amici .funghetto{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.Amici .crazy{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.Amici .taverna{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.Amici .wake{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
 
 .Brand .card, .Brand .card img{
@@ -331,6 +362,97 @@ h1{
   border-bottom-right-radius: 0;
 }
 
+.video-thomas{
+  max-width: fit-content;
+}
+
 .Contatti{
   background-image: url(../src/Immagini/a41.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper-contatti{
+  background: black;
+  opacity: 80%;
+}
+
+.wrapper-contatti input, .wrapper-contatti div, .wrapper-contatti textarea{
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.wrapper-contatti input:focus, .wrapper-contatti textarea:focus{
+  background: transparent !important;
+  color: white !important;
+  border-color: white;
+}
+
+.contatti-form{
+  max-width: 500px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+}
+
+/*Cookie*/
+
+.cookie{
+  min-width: 250px;
+  width: 20%;
+  height: 70px;
+  background-color: #282c34;
+  border-radius: 5vmin;
+  position: fixed;
+  left: 5%;
+  bottom: 80px;
+  display: inline-block;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.cookie p{
+  color: #34ebae;
+}
+
+.cookie .accept {
+  background-color: #40CC79;
+  color: #fff !important;
+  border-radius: 32px;
+  padding: 3px 23px;
+  /* align-self: center; */
+  font-size: 19px;
+  margin-top: 2.5%;	
+  margin-left: 3%;
+
+}
+.cookie .accept:hover {
+  background-color: #30b867;
+}
+
+.Privacy{
+  width: 90%;
+  margin: 5% auto;
+}
+
+.Footer img{
+  width: 30px;
+  margin: 0 10px;
+}
+
+.Coupon{
+  background-image: url(../src/Immagini/a41.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.coupon-bg{
+  background: rgba(0, 0, 0, .7)
+}
+
+.coupon-bg *{
+  opacity: 100%;
 }

@@ -11,7 +11,7 @@ class Categorie extends React.Component {
     }
     render() { 
         return ( 
-            <div className="Categorie container-fluid d-inline d-md-flex">
+            <div id="home" className="Categorie container-fluid d-inline d-md-flex">
                 <div class="card">
                     <img src={Snowboard} class="card-img" alt="..."/>
                     <div className="card-img-overlay">

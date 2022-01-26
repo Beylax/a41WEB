@@ -1,5 +1,4 @@
 import React from "react";
-import Spedizione from "../Immagini/spedizione.png";
 
 class Chisiamo extends React.Component {
     constructor(props) {
@@ -26,15 +25,10 @@ class Chisiamo extends React.Component {
                             Clicca qui sotto e fai un giro nel nostro shop!
                         </p>
                     </div>
-                    <iframe title="Video" width="420" height="315"
+                    <iframe title="Video" className="video-thomas w-100" height="315"
                         src="https://www.youtube.com/embed/buktnYJBTtg?autoplay=1&mute=1">
                     </iframe>
                     <hr/>
-                    <div>
-                        <h1>SPEDIZIONI GRATUITE</h1>
-                        <img src={Spedizione} alt="..."/>
-                    </div>
-                    <button className="btn btn-outline-success">Vai al NEGOZIO</button>
                 </div>
             </div>
         )
