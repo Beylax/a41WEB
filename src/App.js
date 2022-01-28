@@ -2,13 +2,14 @@ import './App.css';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom'
 import Home from "./Pagine/Home";
 import ErrorPage from "./Pagine/ErrorPage";
+import Privacy from './Pagine/Privacy';
+import Negozio from './Pagine/Negozio';
 import React from 'react';
 import A41Logo from './Immagini/a41Logo.png'
 import FacebookLogo from './Immagini/facebookLogo.png'
 import InstagramLogo from './Immagini/instagramLogo.png'
 import WhatsappLogo from './Immagini/whatsappLogo.png'
 import YoutubeLogo from './Immagini/youtubeLogo.png'
-import Privacy from './Pagine/Privacy';
 
 class App extends React.Component {
 
@@ -73,6 +74,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Privacy" element={<Privacy/>}/>
+            <Route path="/Negozio" element={<Negozio/>}/>
             <Route path="/*" element={<ErrorPage/>}/>
           </Routes>
         </BrowserRouter>
